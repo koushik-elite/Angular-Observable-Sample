@@ -1,5 +1,7 @@
 # Angular Observable, BehaviorSubject, AsyncSubject, ReplaySubject - Sample's
 
+This simple projects shows communication between parent and child Components and Communication between sibling components using RxJs (Reactive Programming) additional with reactive form implementation
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
