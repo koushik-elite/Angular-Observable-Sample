@@ -1,4 +1,5 @@
-# Angular Observable, BehaviorSubject, AsyncSubject, ReplaySubject - Sample's
+# Angular 4 Observable Example
+## Using BehaviorSubject, AsyncSubject, ReplaySubject
 
 This simple projects shows communication between parent and child Components and Communication between sibling components using RxJs (Reactive Programming) additional with reactive form implementation
 
