@@ -1,7 +1,8 @@
 import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA, OnDestroy } from '@angular/core';
 import { BehaviorTestService } from './behavior-test.service';
-import { Observable } from 'rxjs/Observable';
+import {Observable} from 'rxjs/Rx';
 import { ActivatedRoute } from '@angular/router';
+import 'rxjs/add/observable/fromEvent';
 
 @Component({
   selector: 'app-behavior-test',

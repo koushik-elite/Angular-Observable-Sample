@@ -20,10 +20,13 @@ export class BehaviorTestChildComponent implements OnInit, OnDestroy {
   ngOnInit() {
     if (this.typeO === 'async') {
       this.observable = this._bTest.currentAsycTick;
+      this.typeO = "AsyncSubject RxJs";
     } else if (this.typeO === 'replay') {
       this.observable = this._bTest.currentReplayTick;
+      this.typeO = "ReplaySubject RxJs";
     } else {
       this.observable = this._bTest.currentTick;
+      this.typeO = "BehaviorSubject RxJs";
     }
   }
 

@@ -26,7 +26,9 @@ const routes: Routes = [
     BrowserModule, ReactiveFormsModule, FormsModule, HttpClientModule, RouterModule.forRoot(routes),
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ],
-  providers: [BehaviorTestService, {provide:BehaviorSubject, useValue: "BehaviorSubject"}],
+  providers: [BehaviorTestService, {provide:BehaviorSubject, useValue: "BehaviorSubject"},
+  {provide:AsyncSubject, useValue: "AsyncSubject"},
+  {provide:ReplaySubject, useValue: "ReplaySubject"}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

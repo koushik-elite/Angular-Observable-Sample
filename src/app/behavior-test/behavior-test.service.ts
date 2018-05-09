@@ -4,16 +4,18 @@ import { BehaviorSubject, AsyncSubject, ReplaySubject, Observable } from 'rxjs/R
 @Injectable()
 export class BehaviorTestService {
 
-  currentTick: any;
-  currentAsycTick: any;
-  currentReplayTick: any;
+  currentTick: BehaviorSubject<number> = new BehaviorSubject<number>(0)
+  currentAsycTick: AsyncSubject<number> = new AsyncSubject<number>();
+  currentReplayTick: ReplaySubject<number> = new ReplaySubject<number>();
 
-  constructor(private _currentTick: BehaviorSubject<number> = new BehaviorSubject<number>(0), 
-  private _currentAsycTick: AsyncSubject<number>, private _currentReplayTick: ReplaySubject<number>, ) { 
-    this.currentTick = _currentTick;
+  constructor(){}
+
+  /*
+  constructor(private _currentAsycTick: AsyncSubject<number>, private _currentReplayTick: ReplaySubject<number>, ) { 
+    //this.currentTick = _currentTick;
     this.currentAsycTick = _currentAsycTick;
     this.currentReplayTick = _currentReplayTick;
-  }
+  }*/
 
   getTick() {
 
