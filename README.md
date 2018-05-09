@@ -35,4 +35,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![ScreenShot](doc/demo2.jpg?raw=true "ScreenShot")
 
 ## Demo ScreenShot 2
+### Click on the "Start" button bellow to start the timer then subscribe each component with your own delay time
 ![ScreenShot](doc/demo1.jpg?raw=true "ScreenShot")
