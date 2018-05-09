@@ -1,4 +1,4 @@
-# Angular-Observable-Sample
+# Angular Observable, BehaviorSubject, AsyncSubject, ReplaySubject - Sample's
 
 # MyApp
 
