@@ -1,0 +1,33 @@
+<p>
+  behavior-test works! {{i}}
+</p>
+<div class="main">
+  <button (click)="startClick();" [disabled]="isStarted" >Start</button>
+</div>
+<div class="child">
+  <div class="child-item">
+    <span>Inside</span>
+    <span>{{ observable | async }}</span>
+  </div>  
+  <div class="child-item component">
+      <app-behavior-test-child></app-behavior-test-child>
+  </div>
+  <div class="child-item">
+      <span>Inside</span>
+      <span>{{ observable | async }}</span>
+    </div>
+  <div class="child-item component">
+      <app-behavior-test-child [typeO]="'async'"></app-behavior-test-child>
+  </div>
+  <div class="child-item component">
+      <app-behavior-test-child [typeO]="'replay'"></app-behavior-test-child>
+  </div>
+  <div class="child-item">
+      <span>Inside</span>
+      <span></span>
+      <button>Subscribe</button>
+    </div>  
+  <div class="child-item component">
+      <app-behavior-test-child [typeO]="'bas'"></app-behavior-test-child>
+  </div>
+</div>

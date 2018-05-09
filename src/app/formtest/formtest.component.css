@@ -1,0 +1,6 @@
+.ng-invalid {
+    border-color: red;
+}
+.ng-touch {
+    border-color: green;
+}

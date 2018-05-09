@@ -1,0 +1,27 @@
+.child {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: calc((150px + 5px) * 5);
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    /* flex: 1 1 auto; */
+}
+.child-item {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    word-wrap: break-word;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+span {
+    display: block;
+}
+.component {
+    background-color: yellow;
+}

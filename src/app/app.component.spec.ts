@@ -1,11 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { RouterTestingModule } from '@angular/router/testing'
+import { BehaviorTestComponent } from './behavior-test/behavior-test.component';
+import { BehaviorTestChildComponent } from './behavior-test-child/behavior-test-child.component';
+import { RouterModule, Routes } from '@angular/router';
+import { FormtestComponent } from './formtest/formtest.component';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
-      ],
+        AppComponent, BehaviorTestComponent,
+        BehaviorTestChildComponent,
+        FormtestComponent
+      ], imports: [RouterTestingModule, ReactiveFormsModule, FormsModule, HttpClientModule]
     }).compileComponents();
   }));
   it('should create the app', async(() => {

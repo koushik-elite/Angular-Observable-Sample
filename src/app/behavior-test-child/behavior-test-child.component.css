@@ -1,0 +1,12 @@
+.child-item {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    margin: 5px;
+}
+span.title {
+    display: block;
+}

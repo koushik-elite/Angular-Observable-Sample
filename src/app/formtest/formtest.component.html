@@ -1,0 +1,19 @@
+<section class="sample-app-content">
+  <h1>Model-based Form Example:</h1>
+  <form [formGroup]="formtest" (ngSubmit)="onSubmitModelBased()">
+      <p>
+          <label>First Name:</label>
+          <input type="text" formControlName="firstName">
+      </p>
+      <p>
+          <label>Email:</label>
+          <input type="text" formControlName="email">
+      </p>
+      <p>
+          <button type="submit" [disabled]="!formtest.valid">Submit</button>
+      </p>
+  </form>
+</section>
+<section>
+  {{result}}
+</section>
